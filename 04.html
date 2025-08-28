@@ -15,10 +15,21 @@
     */
 
     //ENTRADA
-
+let ingredientes = ["Farinha", "Açúcar", "Ovos", "Sal", "Chocolate"];
+const existe = prompt("existe algum ingrediente secreto? Sim ou Não.").trim().toLowerCase().replace("ã","a");    
 
     //PROCESSAMENTO
+if (existe === "sim"){
+    const secreto = prompt("se existe qual dos ingredientes desta lista é o secreto? Farinha, Açúcar, Ovos, Sal, Chocolate").trim();
 
+    const posicaoIngrediente = ingredientes.indexOf(secreto);
+
+    alert("Posição do Ingrediente Secreto:" + posicaoIngrediente);
+} else if (existe === "nao"){
+    alert("Dale grêmio!"+ ingredientes);
+}else{
+    alert("tem que digitar algo né mano!");
+}
 
     //SAÍDA
     

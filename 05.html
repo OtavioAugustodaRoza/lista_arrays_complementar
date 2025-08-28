@@ -17,11 +17,14 @@
     */
 
     //ENTRADA
-
+const codigosDeAcesso = ["Delta-7", "Alpha-9", "Omega-3", "Gama-4", "Zeta-1"];
 
     //PROCESSAMENTO
+const publica = codigosDeAcesso.slice(1,4);
 
-
+let copia = [...codigosDeAcesso];
+copia.splice(2,1,"Sigma-5");
+const codigosAtualizados = copia;
     //SAÍDA
-    
+alert(` lista original: ${codigosDeAcesso.join(" , ")} / lista pública:${publica.join(" , ")}  / lista atualizada: ${codigosAtualizados.join(" , ")}`);
 </script>

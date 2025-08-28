@@ -12,11 +12,18 @@
     */
 
     //ENTRADA
-
-
+let filaDeAtendimento = ["Ana", "Bruno", "Carla"];
+const clienteNovo = prompt("escreva o nome do novo cliente na fila de atendimento:").trim();
+const clienteAtendido = prompt("dos nomes Ana, Bruno e clara escreva um para ter terminado de ser atendido:").trim();
     //PROCESSAMENTO
-
-
+filaDeAtendimento.push(clienteNovo);
+const indice = filaDeAtendimento.indexOf(clienteAtendido);
+if (indice >= 0){
+    filaDeAtendimento.splice(indice,1);
+    alert(`lista de clientes na fila atualizada: ${filaDeAtendimento.join(" - ")}`);
+}else {
+    alert("O nome que você digitou não existe na lista!");
+}
     //SAÍDA
 
 </script>

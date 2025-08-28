@@ -14,11 +14,12 @@
     */
 
     //ENTRADA
-
-
+let playlist = ["Everlong", "The Pretender", "Learn to Fly"];
+const novaMusica = prompt("escreva o nome da música a ser adcionada a playlist.").trim();
     //PROCESSAMENTO
-
+playlist.shift();
+playlist.push(novaMusica);
 
     //SAÍDA
-    
+alert(playlist.join(" - "));    
 </script>

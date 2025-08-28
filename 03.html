@@ -13,11 +13,15 @@
     */
 
     //ENTRADA
-
+let jogadores = ["Pedro", "Sofia", "Lucas", "Helena", "Gabriel", "Laura"];
+let timeAzul = [];
+let timeVermelho = [];
 
     //PROCESSAMENTO
-
+const metade = jogadores.length/2;
+timeAzul = jogadores.slice(0,metade);
+timeVermelho = jogadores.slice(metade);
 
     //SAÍDA
-    
+alert(`time azul: ${timeAzul.join(" - ")}/ time vermelho: ${timeVermelho.join(" - ")}`);    
 </script>
