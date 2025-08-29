@@ -24,10 +24,17 @@
     */
 
     //ENTRADA
-
-
+let inventarioMagico = ["Poção de Cura", "Elixir da Coragem", "Antídoto Universal", "Gás do Sono"];
+let itemVendido = prompt("qual item foi vendido?").trim();
     //PROCESSAMENTO
 
+if (inventarioMagico.indexOf(itemVendido) !== -1){
+    itemVendido = inventarioMagico.indexOf(itemVendido);
+    itemVendido = inventarioMagico.splice(itemVendido,1);
+    document.write(`item vendido: ${itemVendido} / inventario atual: ${inventarioMagico.join(", ")}  `);
+}else {
+    alert(`ERRO item ${itemVendido} não foi encontrado!`);
+}
 
     //SAÍDA
     
