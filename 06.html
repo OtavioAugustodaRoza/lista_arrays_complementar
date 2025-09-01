@@ -15,11 +15,20 @@
     */
 
     //ENTRADA
-
-
+const etapasLoteA = ["Corte", "Montagem", "Pintura", "Verificação de Qualidade", "Embalagem"];
+const userAcha = Number(prompt("qual a quantidade de processos que o produto tem?"));
+let aprovadoOuNao = "";
     //PROCESSAMENTO
+const temNumeroCorretoDeEtapas = (etapasLoteA.length == userAcha)? true : false;
+const passouNaQualidade = (etapasLoteA.indexOf("Verificação de Qualidade") !== -1) ? true : false;
+const loteAprovado = (temNumeroCorretoDeEtapas == true && passouNaQualidade == true)? true : false;
 
+if (loteAprovado === true){
+    aprovadoOuNao = "YES";
+} else{
+    aprovadoOuNao = "NO";
+}
 
     //SAÍDA
-    
+alert("O lote foi aprovado?:"+ aprovadoOuNao);  
 </script>
