@@ -14,10 +14,14 @@
     */
 
     //ENTRADA
-
-
+const convidadosVIP = ["Angela", "Ricardo", "Julia", "Marcos", "Fernanda"];
+const nomeConvidado = prompt("qual nome você deseja verificar ?").trim()
     //PROCESSAMENTO
-
+if (convidadosVIP.indexOf(nomeConvidado) !== -1){
+    alert("Acesso liberado!");
+} else{ 
+    alert("Acesso negado.");
+}
 
     //SAÍDA
     
