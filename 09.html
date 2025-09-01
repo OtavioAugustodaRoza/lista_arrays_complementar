@@ -15,11 +15,12 @@
     */
     
     //ENTRADA
-
-
+let timeTitular = ["Phoenix", "Jett", "Sova", "Sage", "Cypher"];
+let jogadorSai = prompt("qual jogador sai?").trim();
+const jogadorEntra = prompt("qual jogador entra?").trim();
     //PROCESSAMENTO
-
-
+jogadorSai =timeTitular.indexOf(jogadorSai);
+timeTitular = timeTitular.splice(jogadorSai,1,jogadorEntra);
     //SAÍDA
-    
+alert(timeTitular);   
 </script>
